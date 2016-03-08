@@ -35,6 +35,7 @@ module Formular
 
     include Id
     include Name
+    attr_reader :model
 
     def initialize(tag: Tag.new, path: [], prefix: ["form"], model:, parent:nil, errors:nil)
       @tag      = tag
